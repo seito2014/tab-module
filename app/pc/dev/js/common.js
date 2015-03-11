@@ -2,5 +2,7 @@
 
     'use strict';
 
+    $('#tab').tabModule();
+
 })();
 

@@ -1,20 +1,45 @@
 <% include layout/_head %>
-<% include layout/_header %>
-            <!-- start contents -->
-            <div class="main_visual">
-                <div class="main_visual_inner">
-                    <img src="http://placehold.it/980x520" height="520" width="980" alt="">
-                </div>
-            </div>
 
             <!-- start contents -->
-            <div class="contents">
-                <div class="contents_inner">
-                    <div class="main"></div>
-                    <aside class="side"></aside>
-                </div>
-            </div>
-            <!-- end contents -->
+    <div class="contents">
+        <div class="contents_inner">
 
-<% include layout/_footer %>
+            <div class="tab-wrap" id="tab">
+                <ul class="tab-menu" id="tab-menu">
+                    <li class="tab-menu-item is-active">
+                        <a href="#tab-target-item1">MENU1</a>
+                    </li>
+                    <li class="tab-menu-item">
+                        <a href="#tab-target-item2">MENU2</a>
+                    </li>
+                    <li class="tab-menu-item">
+                        <a href="#tab-target-item3">MENU3</a>
+                    </li>
+                </ul>
+                <ul class="tab-target" id="tab-target">
+
+                    <li class="tab-target-item is-active" id="tab-target-item1">
+                        <div class="content">
+                            Tab1
+                        </div>
+                    </li>
+
+                    <li class="tab-target-item" id="tab-target-item2">
+                        <div class="content">
+                            Tab2
+                        </div>
+                    </li>
+
+                    <li class="tab-target-item" id="tab-target-item3">
+                        <div class="content">
+                            Tab3
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- end contents -->
+
 <% include layout/_script %>
